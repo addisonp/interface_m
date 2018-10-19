@@ -1,0 +1,1002 @@
+{
+  "definitions": {
+    "AddressType": {
+      "properties": {
+        "Addressee": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "StreetAddress": {
+          "type": [
+            "string"
+          ]
+        },
+        "StreetAddress2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Country": {
+          "$ref": "#/definitions/ISO3166CountyCode"
+        },
+        "Province": {
+          "type": [
+            "string"
+          ]
+        },
+        "City": {
+          "type": [
+            "string"
+          ]
+        },
+        "PostalCode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "AuditoriumCapabilitiesType": {
+      "properties": {
+        "AdjustableScreenMask": {
+          "$ref": "#/definitions/AdjustableScreenMaskType"
+        },
+        "LargeFormat": {
+          "properties": {
+            "InstallDate": {
+              "$ref": "#/definitions/date"
+            },
+            "Value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "VisuallyImpairedNarrationSystem": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "HearingImpairedSystem": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Supports35MM": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "Digital3DSystem": {
+          "$ref": "#/definitions/Digital3DSystemType"
+        },
+        "AudioFormatList": {
+          "items": {
+            "oneOf": [
+              {
+                "type": [
+                  "string"
+                ],
+                "enum": [
+                  "51",
+                  "71",
+                  "SDS",
+                  "61",
+                  "M"
+                ]
+              },
+              {
+                "type": [
+                  "null"
+                ]
+              }
+            ]
+          },
+          "type": "array"
+        },
+        "ScreenAspectRatio": {
+          "$ref": "#/definitions/ScreenAspectRatioType"
+        },
+        "ClosedCaptionSystem": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "AdjustableScreenMask",
+        "Digital3DSystem",
+        "ScreenAspectRatio"
+      ]
+    },
+    "AdjustableScreenMaskType": {
+      "oneOf": [
+        {
+          "type": [
+            "string"
+          ],
+          "enum": [
+            "Top",
+            "Side",
+            "Bottom",
+            "FloatingScope",
+            "FloatingFlat",
+            "SideBottom",
+            "SideTop",
+            "TopBottom",
+            "All",
+            "Fixed"
+          ]
+        },
+        {
+          "type": [
+            "null"
+          ]
+        }
+      ]
+    },
+    "ComponentKindType": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "Firmware",
+        "Software",
+        "Hardware"
+      ]
+    },
+    "ComponentType": {
+      "properties": {
+        "Version": {
+          "type": [
+            "string"
+          ]
+        },
+        "ComponentKind": {
+          "$ref": "#/definitions/ComponentKindType"
+        },
+        "ComponentManufacturer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Description": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "ComponentKind",
+        "ComponentManufacturer",
+        "Description",
+        "Version"
+      ]
+    },
+    "ContactType": {
+      "properties": {
+        "Name": {
+          "type": [
+            "string"
+          ]
+        },
+        "Type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Phone2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "CountryCode": {
+          "$ref": "#/definitions/ISO3166CountyCode"
+        },
+        "Phone1": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Email": {
+          "$ref": "#/definitions/EmailType"
+        }
+      },
+      "type": "object"
+    },
+    "date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}$"
+    },
+    "datetime": {
+      "type": [
+        "string"
+      ],
+      "pattern": "^[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}T[0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2}$"
+    },
+    "DeliveryMethodType": {
+      "properties": {
+        "Network": {
+          "items": {
+            "properties": {
+              "URL": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": "object",
+            "required": [
+              "URL"
+            ]
+          },
+          "type": "array"
+        },
+        "Physical": {
+          "items": {
+            "properties": {
+              "MediaType": {
+                "type": [
+                  "string"
+                ]
+              },
+              "Detail": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": "object",
+            "required": [
+              "Detail",
+              "MediaType"
+            ]
+          },
+          "type": "array"
+        },
+        "Modem": {
+          "items": {
+            "properties": {
+              "PhoneNumber": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": "object",
+            "required": [
+              "PhoneNumber"
+            ]
+          },
+          "type": "array"
+        },
+        "Satellite": {
+          "items": {
+            "properties": {
+              "Provider": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": "object",
+            "required": [
+              "Provider"
+            ]
+          },
+          "type": "array"
+        },
+        "Email": {
+          "items": {
+            "properties": {
+              "EmailAddress": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "EmailName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": "object",
+            "required": [
+              "EmailAddress",
+              "EmailName"
+            ]
+          },
+          "type": "array"
+        },
+        "TKR": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "deviceIdentifier": {
+      "properties": {
+        "CertThumbprint": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "DeviceUID": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "CertThumbprint",
+        "DeviceUID"
+      ]
+    },
+    "DeviceCapabilitiesType": {
+      "properties": {
+        "Resolution": {
+          "$ref": "#/definitions/ResolutionType"
+        },
+        "WatermarkingList": {
+          "items": {
+            "$ref": "#/definitions/WatermarkingType"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "DeviceType": {
+      "items": {
+        "properties": {
+          "DeviceName": {
+            "type": "string"
+          },
+          "KeyInfoList": {
+            "items": {
+              "$ref": "#/definitions/keyInfo"
+            },
+            "type": "array"
+          },
+          "DeviceIdentifier": {
+            "$ref": "#/definitions/deviceIdentifier"
+          },
+          "InstallDate": {
+            "$ref": "#/definitions/date"
+          },
+          "Integrator": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Manufacturer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Capabilities": {
+            "$ref": "#/definitions/DeviceCapabilitiesType"
+          },
+          "IsActive": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "FeedModelNumber": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ModelNumber": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "VPFFinanceEntity": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "VPFStartDate": {
+            "$ref": "#/definitions/date"
+          },
+          "DeviceTypeID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Component": {
+            "items": {
+              "$ref": "#/definitions/ComponentType"
+            },
+            "type": "array"
+          },
+          "DeviceSerial": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "DeviceName",
+          "Capabilities",
+          "DeviceIdentifier",
+          "DeviceSerial",
+          "DeviceTypeID",
+          "IsActive",
+          "Manufacturer",
+          "ModelNumber"
+        ]
+      },
+      "type": "array"
+    },
+    "Digital3DSystemType": {
+      "properties": {
+        "IsActive": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "ScreenType": {
+          "oneOf": [
+            {
+              "type": [
+                "string"
+              ],
+              "enum": [
+                "Silver",
+                "White",
+                "Other"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "Digital3DConfiguration": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "InstallDate": {
+          "$ref": "#/definitions/date"
+        },
+        "ScreenLuminance": {
+          "properties": {
+            "Value": {
+              "type": "integer"
+            },
+            "Units": {
+              "oneOf": [
+                {
+                  "type": [
+                    "string"
+                  ],
+                  "enum": [
+                    "foot-lambert",
+                    "candela-per-square-metre"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "EmailType": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ISO3166CountyCode": {
+      "oneOf": [
+        {
+          "type": [
+            "string"
+          ],
+          "pattern": "^(|[A-Z]{2})$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "keyInfo": {
+      "properties": {
+        "KeyInfo": {
+          "items": {
+            "properties": {
+              "X509SubjectName": {
+                "type": [
+                  "string"
+                ]
+              },
+              "X509Certificate": {
+                "type": [
+                  "string"
+                ]
+              }
+            },
+            "type": "object",
+            "required": [
+              "X509Certificate",
+              "X509SubjectName"
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "type": "object",
+      "required": [
+        "KeyInfo"
+      ]
+    },
+    "LengthUnitEnum": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": [
+            "string"
+          ],
+          "enum": [
+            "meter",
+            "foot",
+            "inch",
+            "centimeter"
+          ]
+        }
+      ]
+    },
+    "ResolutionType": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": [
+            "string"
+          ],
+          "enum": [
+            "2K",
+            "4K"
+          ]
+        }
+      ]
+    },
+    "ScreenAspectRatioType": {
+      "properties": {
+        "Value": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": [
+                "string"
+              ],
+              "enum": [
+                "1.85",
+                "2.39",
+                "1.66",
+                "1.37",
+                "Other"
+              ]
+            }
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "UrnUUID": {
+      "type": [
+        "string"
+      ],
+      "pattern": "urn:uuid:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
+    },
+    "WatermarkingType": {
+      "properties": {
+        "WatermarkManufacturer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "WatermarkModel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "WatermarkVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "WatermarkKind": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": [
+                "string"
+              ],
+              "enum": [
+                "Picture",
+                "Audio"
+              ]
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "WatermarkKind",
+        "WatermarkManufacturer",
+        "WatermarkModel",
+        "WatermarkVersion"
+      ]
+    }
+  },
+  "properties": {
+    "AnnotationText": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "FacilityInfo": {
+      "properties": {
+        "FacilityDeviceList": {
+          "items": {
+            "properties": {
+              "KeyInfoList": {
+                "items": {
+                  "$ref": "#/definitions/keyInfo"
+                },
+                "type": "array"
+              },
+              "DeviceIdentifier": {
+                "$ref": "#/definitions/deviceIdentifier"
+              },
+              "InstallDate": {
+                "$ref": "#/definitions/date"
+              },
+              "Integrator": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Manufacturer": {
+                "type": [
+                  "string"
+                ]
+              },
+              "Capabilities": {
+                "$ref": "#/definitions/DeviceCapabilitiesType"
+              },
+              "IsActive": {
+                "type": [
+                  "boolean"
+                ]
+              },
+              "FeedModelNumber": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ModelNumber": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "VPFFinanceEntity": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "VPFStartDate": {
+                "$ref": "#/definitions/date"
+              },
+              "DeviceTypeID": {
+                "type": [
+                  "string"
+                ]
+              },
+              "Component": {
+                "items": {
+                  "$ref": "#/definitions/ComponentType"
+                },
+                "type": "array"
+              },
+              "DeviceSerial": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": "object",
+            "required": [
+              "Capabilities",
+              "Component",
+              "DeviceIdentifier",
+              "DeviceSerial",
+              "DeviceTypeID",
+              "InstallDate",
+              "Integrator",
+              "IsActive",
+              "KeyInfoList",
+              "Manufacturer",
+              "ModelNumber",
+              "VPFFinanceEntity",
+              "VPFStartDate"
+            ]
+          },
+          "type": "array"
+        },
+        "AlternateFacilityIDList": {
+          "items": {
+            "properties": {
+              "AlternateFacilityID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": "object",
+            "required": [
+              "AlternateFacilityID"
+            ]
+          },
+          "type": "array"
+        },
+        "FacilityTimeZone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Addresses": {
+          "properties": {
+            "Physical": {
+              "$ref": "#/definitions/AddressType"
+            },
+            "Billing": {
+              "$ref": "#/definitions/AddressType"
+            },
+            "Shipping": {
+              "$ref": "#/definitions/AddressType"
+            }
+          },
+          "type": "object",
+          "required": [
+            "Billing",
+            "Physical",
+            "Shipping"
+          ]
+        },
+        "Circuit": {
+          "type": [
+            "string"
+          ]
+        },
+        "FacilityName": {
+          "type": [
+            "string"
+          ]
+        },
+        "ContactList": {
+          "items": {
+            "$ref": "#/definitions/ContactType"
+          },
+          "type": "array"
+        },
+        "FacilityCapabilities": {
+          "properties": {
+            "DCPDeliveryMethodList": {
+              "$ref": "#/definitions/DeliveryMethodType"
+            },
+            "KDMDeliveryMethodList": {
+              "$ref": "#/definitions/DeliveryMethodType"
+            }
+          },
+          "type": "object",
+          "required": [
+            "DCPDeliveryMethodList",
+            "KDMDeliveryMethodList"
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "Addresses",
+        "AlternateFacilityIDList",
+        "Circuit",
+        "ContactList",
+        "FacilityCapabilities",
+        "FacilityDeviceList",
+        "FacilityName",
+        "FacilityTimeZone"
+      ]
+    },
+    "AuditoriumInfo": {
+      "properties": {
+        "AuditoriumList": {
+          "items": {
+            "properties": {
+              "AuditoriumNumberOrName": {
+                "type": [
+                  "string"
+                ]
+              },
+              "ScreenWidth": {
+                "properties": {
+                  "Value": {
+                    "oneOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "Units": {
+                    "$ref": "#/definitions/LengthUnitEnum"
+                  }
+                },
+                "type": "object"
+              },
+              "SuiteList": {
+                "items": {
+                  "properties": {
+                    "Device": {
+                      "$ref": "#/definitions/DeviceType"
+                    }
+                  },
+                  "type": "object",
+                  "required": [
+                    "Device"
+                  ]
+                },
+                "type": "array"
+              },
+              "SeatingCapacity": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "AuditoriumInstallDate": {
+                "$ref": "#/definitions/date"
+              },
+              "NonSecurityDeviceList": {
+                "$ref": "#/definitions/DeviceType"
+              },
+              "Capabilities": {
+                "$ref": "#/definitions/AuditoriumCapabilitiesType"
+              }
+            },
+            "type": "object",
+            "required": [
+              "AuditoriumInstallDate",
+              "AuditoriumNumberOrName",
+              "Capabilities",
+              "NonSecurityDeviceList",
+              "ScreenWidth",
+              "SeatingCapacity",
+              "SuiteList"
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "type": "object",
+      "required": [
+        "AuditoriumList"
+      ]
+    },
+    "MessageId": {
+      "$ref": "#/definitions/UrnUUID"
+    },
+    "IssueDate": {
+      "$ref": "#/definitions/datetime"
+    },
+    "FacilityID": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "Source": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "required": [
+    "AnnotationText",
+    "AuditoriumInfo",
+    "FacilityID",
+    "FacilityInfo",
+    "IssueDate",
+    "MessageId"
+  ],
+  "$schema": "http://json-schema.org/schema#"
+}

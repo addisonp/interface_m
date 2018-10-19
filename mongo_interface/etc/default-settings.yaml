@@ -5,3 +5,6 @@ flm-db:
   host: localhost
   port: 27017
   database: flm
+
+flm_schema_path : !!python/object/apply:pkg_resources.resource_filename
+    args: [mongo_interface, etc/schema/flm_schema.json]
