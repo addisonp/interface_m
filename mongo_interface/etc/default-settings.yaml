@@ -1,0 +1,7 @@
+gen_util_config:
+  env_var: SMPTE_FLM_ENV
+
+flm-db:
+  host: localhost
+  port: 27017
+  database: flm
