@@ -1,4 +1,8 @@
+import datetime
+
 import arrow
+import pytz
+import tzlocal
 
 
 def string_to_date(adict):
@@ -64,5 +68,10 @@ def find_all_in_flm(keywords=[], adict={}, return_list=[]):
                 if type(item) is dict:
                     find_all_in_flm(keywords, item)
     return return_list
+
+def localtz_now():
+    utc_now = datetime.datetime.utcnow()
+    local_tz = tzlocal.get_localzone()
+    return utc_now.replace(tzinfo=pytz.utc).astimezone(local_tz)
 
 

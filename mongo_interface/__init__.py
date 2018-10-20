@@ -2,7 +2,7 @@ from functools import partial
 
 from mongo_interface.util.config import GenConfig
 
-__version__ = '0.0.0'
+__version__ = '0.0.1'
 
 GenConfig = partial(
     GenConfig,

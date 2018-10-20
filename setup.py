@@ -27,14 +27,18 @@ setup(
     install_requires=[
         'arrow==0.12.1',
         'bson',
+        'dictalchemy',
         'dryable',
         'jsonschema==2.6.0',
         'mock==2.0.0',
         'mongomock==3.13.0',
         'pymongo==3.7.2',
+        'pytz',
         'PyYAML',
         'regex',
+        'sqlalchemy==1.2.12',
         'tenacity',
+        'tzlocal',
         'wheel'
     ],
     include_package_data=True,

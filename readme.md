@@ -38,3 +38,4 @@ flm_data = flm.extract_smpte_flm(facility_id=3)
 
 ## Change Log
 0.0.0 Initial implementation with one sample test using mocking
+0.0.1 Connection to PostgreSQL through SQLAlchemy and multiprocessing of all certificates for device lookup
