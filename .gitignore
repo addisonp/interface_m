@@ -1,1 +1,11 @@
+# virtualenv
 venv
+
+#Pycharm
+.ideas
+
+#Log files
+*.log
+
+# Distribution / packaging
+dist/

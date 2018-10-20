@@ -14,8 +14,7 @@ a smpte flm document.  All return documents are valid json objects."""
 
 with open(os.path.join('mongo_interface', '__init__.py'), 'rb') as f:
     VERSION = str(ast.literal_eval(_version_re.search(
-        f.read().decode('utf-8')).group(1)
-                                   ))
+        f.read().decode('utf-8')).group(1)))
 
 setup(
     name=NAME,
@@ -26,14 +25,17 @@ setup(
     author_email='addisonp@gmail.com',
     packages=['mongo_interface', 'mongo_interface.util', 'test'],
     install_requires=[
-        'arrow=',
-        'jsonschema',
-        'pymongo',
-        'regex',
+        'arrow==0.12.1',
+        'bson',
         'dryable',
+        'jsonschema==2.6.0',
+        'mock==2.0.0',
+        'mongomock==3.13.0',
+        'pymongo==3.7.2',
         'PyYAML',
-        'pika',
+        'regex',
         'tenacity',
+        'wheel'
     ],
     include_package_data=True,
     package_data={
