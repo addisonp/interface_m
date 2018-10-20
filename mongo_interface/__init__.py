@@ -6,6 +6,6 @@ __version__ = '0.0.0'
 
 GenConfig = partial(
     GenConfig,
-    config_dir='etc',
+    config_dir='mongo_interface/etc',
     default_settings='default-settings.yml'
 )

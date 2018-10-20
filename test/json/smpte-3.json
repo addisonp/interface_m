@@ -1,0 +1,398 @@
+{
+  "AnnotationText": "Generated from Theatre DE-CST-008451-01",
+  "AuditoriumInfo": {
+    "AuditoriumList": [
+      {
+        "AuditoriumInstallDate": "2012-09-12",
+        "AuditoriumNumberOrName": "Screen 01",
+        "AlternateAuditoriumMap": [
+          {
+            "FacilityID": "aam.com:DE-CST-008451-01",
+            "AuditoriumNumberOrName": "silver"
+          }
+        ],
+        "Capabilities": {
+          "AdjustableScreenMask": "Fixed",
+          "AudioFormatList": [
+            "51"
+          ],
+          "ClosedCaptionSystem": null,
+          "Digital3DSystem": {
+            "Digital3DConfiguration": "RealD XL Cinema System",
+            "InstallDate": "2012-12-10",
+            "IsActive": true,
+            "ScreenLuminance": {},
+            "ScreenType": null
+          },
+          "HearingImpairedSystem": null,
+          "LargeFormat": null,
+          "ScreenAspectRatio": {},
+          "Supports35MM": false,
+          "VisuallyImpairedNarrationSystem": null
+        },
+        "NonSecurityDeviceList": [],
+        "ScreenWidth": {},
+        "SeatingCapacity": null,
+        "SuiteList": [
+          {
+            "Device": [
+              {
+                "Capabilities": {
+                  "Resolution": null,
+                  "WatermarkingList": [
+                    {
+                      "WatermarkKind": null,
+                      "WatermarkManufacturer": "Thomson",
+                      "WatermarkModel": "Watermark Thomson NexGuard",
+                      "WatermarkVersion": "Thomson 1.11"
+                    }
+                  ]
+                },
+                "Component": [
+                  {
+                    "ComponentKind": "Software",
+                    "ComponentManufacturer": "Doremi Technologies",
+                    "Description": "Cinelister",
+                    "Version": "2.6.4-0"
+                  },
+                  {
+                    "ComponentKind": "Firmware",
+                    "ComponentManufacturer": "Doremi Technologies",
+                    "Description": "Dolphin",
+                    "Version": "21.3y"
+                  }
+                ],
+                "DeviceIdentifier": {
+                  "CertThumbprint": null,
+                  "DeviceUID": "4AA40000-0000-0000-0000-000000000000"
+                },
+                "DeviceName": "DOREMI_DCP2000_252039_PLY",
+                "DeviceSerial": "252039",
+                "DeviceTypeID": "PLY",
+                "FeedModelNumber": "DCP2000",
+                "InstallDate": "2012-09-12",
+                "Integrator": "AAM",
+                "IsActive": true,
+                "Manufacturer": "DOREMI",
+                "ModelNumber": "DCP2000",
+                "VPFFinanceEntity": "AAM-VPF",
+                "VPFStartDate": null
+              },
+              {
+                "Capabilities": {
+                  "Resolution": null,
+                  "WatermarkingList": []
+                },
+                "Component": [
+                  {
+                    "ComponentKind": "Firmware",
+                    "ComponentManufacturer": null,
+                    "Description": "Light Engine",
+                    "Version": "14.2.50"
+                  },
+                  {
+                    "ComponentKind": "Software",
+                    "ComponentManufacturer": "NEC",
+                    "Description": "NEC TI",
+                    "Version": "1.09"
+                  }
+                ],
+                "DeviceIdentifier": {
+                  "CertThumbprint": null,
+                  "DeviceUID": "4BA40000-0000-0000-0000-000000000000"
+                },
+                "DeviceName": "NEC_NC1600C_9XA0022EE_PR",
+                "DeviceSerial": "9XA0022EE",
+                "DeviceTypeID": "PR",
+                "FeedModelNumber": "NC1600",
+                "InstallDate": "2012-09-12",
+                "Integrator": "AAM",
+                "IsActive": true,
+                "Manufacturer": "NEC",
+                "ModelNumber": "NC1600C",
+                "VPFFinanceEntity": "AAM-VPF",
+                "VPFStartDate": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "AuditoriumInstallDate": "2012-08-30",
+        "AuditoriumNumberOrName": "Screen 02",
+        "AlternateAuditoriumMap": [
+          {
+            "FacilityID": "aam.com:DE-CST-008451-01",
+            "AuditoriumNumberOrName": "blue"
+          },
+          {
+            "FacilityID": "lgf.com:DE-CST-008451-01",
+            "AuditoriumNumberOrName": "7"
+          }
+        ],
+        "Capabilities": {
+          "AdjustableScreenMask": "Fixed",
+          "AudioFormatList": [
+            "51"
+          ],
+          "ClosedCaptionSystem": null,
+          "Digital3DSystem": {
+            "Digital3DConfiguration": "RealD XL Cinema System",
+            "InstallDate": "2012-12-10",
+            "IsActive": true,
+            "ScreenLuminance": {},
+            "ScreenType": null
+          },
+          "HearingImpairedSystem": null,
+          "LargeFormat": null,
+          "ScreenAspectRatio": {},
+          "Supports35MM": false,
+          "VisuallyImpairedNarrationSystem": null
+        },
+        "NonSecurityDeviceList": [],
+        "ScreenWidth": {},
+        "SeatingCapacity": null,
+        "SuiteList": [
+          {
+            "Device": [
+              {
+                "Capabilities": {
+                  "Resolution": null,
+                  "WatermarkingList": []
+                },
+                "Component": [
+                  {
+                    "ComponentKind": "Firmware",
+                    "ComponentManufacturer": null,
+                    "Description": "Light Engine",
+                    "Version": "14.2.50"
+                  },
+                  {
+                    "ComponentKind": "Software",
+                    "ComponentManufacturer": "NEC",
+                    "Description": "NEC TI",
+                    "Version": "1.09"
+                  }
+                ],
+                "DeviceIdentifier": {
+                  "CertThumbprint": null,
+                  "DeviceUID": "4CA40000-0000-0000-0000-000000000000"
+                },
+                "DeviceName": "NEC_NC1600C_97A0025EC_PR",
+                "DeviceSerial": "97A0025EC",
+                "DeviceTypeID": "PR",
+                "FeedModelNumber": "NC1600",
+                "InstallDate": "2012-08-30",
+                "Integrator": "AAM",
+                "IsActive": true,
+                "Manufacturer": "NEC",
+                "ModelNumber": "NC1600C",
+                "VPFFinanceEntity": "AAM-VPF",
+                "VPFStartDate": null
+              },
+              {
+                "Capabilities": {
+                  "Resolution": null,
+                  "WatermarkingList": [
+                    {
+                      "WatermarkKind": null,
+                      "WatermarkManufacturer": "Thomson",
+                      "WatermarkModel": "Watermark Thomson NexGuard",
+                      "WatermarkVersion": "Thomson 1.11"
+                    }
+                  ]
+                },
+                "Component": [
+                  {
+                    "ComponentKind": "Software",
+                    "ComponentManufacturer": "Doremi Technologies",
+                    "Description": "Cinelister",
+                    "Version": "2.6.4-0"
+                  },
+                  {
+                    "ComponentKind": "Firmware",
+                    "ComponentManufacturer": "Doremi Technologies",
+                    "Description": "Dolphin",
+                    "Version": "21.3y"
+                  }
+                ],
+                "DeviceIdentifier": {
+                  "CertThumbprint": null,
+                  "DeviceUID": "4DA40000-0000-0000-0000-000000000000"
+                },
+                "DeviceName": "DOREMI_DCP2000_252056_PLY",
+                "DeviceSerial": "252056",
+                "DeviceTypeID": "PLY",
+                "FeedModelNumber": "DCP2000",
+                "InstallDate": "2012-08-30",
+                "Integrator": "AAM",
+                "IsActive": true,
+                "Manufacturer": "DOREMI",
+                "ModelNumber": "DCP2000",
+                "VPFFinanceEntity": "AAM-VPF",
+                "VPFStartDate": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "AuditoriumInstallDate": "2012-08-30",
+        "AuditoriumNumberOrName": "Screen 03",
+        "AlternateAuditoriumMap": [
+          {
+            "FacilityID": "aam.com:DE-CST-008451-01",
+            "AuditoriumNumberOrName": "76"
+          }
+        ],
+        "Capabilities": {
+          "AdjustableScreenMask": "Fixed",
+          "AudioFormatList": [
+            "51"
+          ],
+          "ClosedCaptionSystem": null,
+          "Digital3DSystem": {
+            "Digital3DConfiguration": "RealD XL Cinema System",
+            "InstallDate": "2012-12-10",
+            "IsActive": true,
+            "ScreenLuminance": {},
+            "ScreenType": null
+          },
+          "HearingImpairedSystem": null,
+          "LargeFormat": null,
+          "ScreenAspectRatio": {},
+          "Supports35MM": false,
+          "VisuallyImpairedNarrationSystem": null
+        },
+        "NonSecurityDeviceList": [],
+        "ScreenWidth": {},
+        "SeatingCapacity": null,
+        "SuiteList": [
+          {
+            "Device": [
+              {
+                "Capabilities": {
+                  "Resolution": null,
+                  "WatermarkingList": []
+                },
+                "Component": [
+                  {
+                    "ComponentKind": "Firmware",
+                    "ComponentManufacturer": null,
+                    "Description": "Light Engine",
+                    "Version": "14.2.50"
+                  },
+                  {
+                    "ComponentKind": "Software",
+                    "ComponentManufacturer": "NEC",
+                    "Description": "NEC TI",
+                    "Version": "2.11"
+                  }
+                ],
+                "DeviceIdentifier": {
+                  "CertThumbprint": null,
+                  "DeviceUID": "4EA40000-0000-0000-0000-000000000000"
+                },
+                "DeviceName": "NEC_NC2500S_95A0008EC_PR",
+                "DeviceSerial": "95A0008EC",
+                "DeviceTypeID": "PR",
+                "FeedModelNumber": "NC2500",
+                "InstallDate": "2012-08-30",
+                "Integrator": "AAM",
+                "IsActive": true,
+                "Manufacturer": "NEC",
+                "ModelNumber": "NC2500S",
+                "VPFFinanceEntity": "AAM-VPF",
+                "VPFStartDate": null
+              },
+              {
+                "Capabilities": {
+                  "Resolution": null,
+                  "WatermarkingList": [
+                    {
+                      "WatermarkKind": null,
+                      "WatermarkManufacturer": "Thomson",
+                      "WatermarkModel": "Watermark Thomson NexGuard",
+                      "WatermarkVersion": "Thomson 1.11"
+                    }
+                  ]
+                },
+                "Component": [
+                  {
+                    "ComponentKind": "Software",
+                    "ComponentManufacturer": "Doremi Technologies",
+                    "Description": "Cinelister",
+                    "Version": "2.6.4-0"
+                  },
+                  {
+                    "ComponentKind": "Firmware",
+                    "ComponentManufacturer": "Doremi Technologies",
+                    "Description": "Dolphin",
+                    "Version": "21.3y"
+                  }
+                ],
+                "DeviceIdentifier": {
+                  "CertThumbprint": null,
+                  "DeviceUID": "4FA40000-0000-0000-0000-000000000000"
+                },
+                "DeviceName": "DOREMI_DCP2000_252047_PLY",
+                "DeviceSerial": "252047",
+                "DeviceTypeID": "PLY",
+                "FeedModelNumber": "DCP2000",
+                "InstallDate": "2012-08-30",
+                "Integrator": "AAM",
+                "IsActive": true,
+                "Manufacturer": "DOREMI",
+                "ModelNumber": "DCP2000",
+                "VPFFinanceEntity": "AAM-VPF",
+                "VPFStartDate": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "FacilityID": null,
+  "FacilityInfo": {
+    "Addresses": {
+      "Billing": {},
+      "Physical": {
+        "Addressee": null,
+        "City": "Crimmitschau",
+        "Country": "DE",
+        "PostalCode": "08451",
+        "Province": "",
+        "StreetAddress": "Friedrich-August-Strasse 1b",
+        "StreetAddress2": null
+      },
+      "Shipping": {}
+    },
+    "AlternateFacilityIDList": [
+      {
+        "AlternateFacilityID": "aam.com:DE-CST-008451-01"
+      }
+    ],
+    "Circuit": "CineStar",
+    "ContactList": [
+      {
+        "CountryCode": "DE",
+        "Email": "Crimmitschau@CineStar.de",
+        "Name": "CineStar Crimmitschau",
+        "Phone1": "0049 03762 93 73 93 ",
+        "Phone2": null,
+        "Type": null
+      }
+    ],
+    "FacilityCapabilities": {
+      "DCPDeliveryMethodList": {},
+      "KDMDeliveryMethodList": {}
+    },
+    "FacilityDeviceList": [],
+    "FacilityName": "CineStar Crimmitschau",
+    "FacilityTimeZone": "Europe/Berlin"
+  },
+  "IssueDate": "2017-10-05T00:58:45",
+  "MessageId": "urn:uuid:E588884F-2D70-486B-9603-00F59643723E",
+  "Source": "aam"
+}

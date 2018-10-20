@@ -58,7 +58,6 @@ class FLM:
 
         self._initialize_sequence(init_value)
         self._initialize_collections()
-        self.ignore_source = self.config['alternate_source']['ignore_source']
 
     def _initialize_collections(self):
         db = self.db.conn()
