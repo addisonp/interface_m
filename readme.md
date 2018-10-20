@@ -6,6 +6,7 @@ This library provides methods into the MongoDB collection for SMPTE [www.smpte.o
 
 * arrow
 * bson
+* dictalchemy
 * jsonschema
 * mock
 * mongomock
@@ -14,6 +15,7 @@ This library provides methods into the MongoDB collection for SMPTE [www.smpte.o
 * python-box
 * regex
 * tenacity
+* tzlocal
 
 
 ## Using the API Library
